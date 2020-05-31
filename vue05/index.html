@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js App</title>
+  <style>
+    .v-enter-active, .v-leave-active {
+      transition: opacity 1s;
+    }
+
+    .v-enter, .v-leave-to {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <button v-on:click="show=!show">切り替え</button>
+    <transition>
+      <p v-if="show">Hello</p>
+    </transition>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
