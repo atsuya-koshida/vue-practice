@@ -6,7 +6,9 @@
     <LikeNumber :total-number="number" @my-click="number = $event"></LikeNumber>
     <button @click="currentComponent = 'Home'">Home</button>
     <button @click="currentComponent = 'About'">About</button>
-    <component :is="currentComponent"></component>
+    <keep-alive>
+      <component :is="currentComponent"></component>
+    </keep-alive>
   </div>
 </template>
 
