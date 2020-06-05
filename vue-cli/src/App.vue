@@ -1,8 +1,9 @@
 <template>
   <div>
     <LikeHeader>
-      <template v-slot:title>
+      <template v-slot:title="slotProps">
         <h1>こんにちは</h1>
+        <h2>{{ slotProps.text }}</h2>
       </template>
       <template v-slot:number>
         <p>{{ number }}</p>
