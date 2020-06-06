@@ -4,6 +4,10 @@
     <transition name="fade">
       <p v-if="show">hello</p>
     </transition>
+    <transition name="fade">
+      <p v-if="show" key="bye">さよなら</p>
+      <p v-if="!show" key="hello">こんにちは</p>
+    </transition>
     <transition name="slide" type="animation" appear>
       <p v-if="show">bye</p>
     </transition>
