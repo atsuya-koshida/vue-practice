@@ -18,12 +18,24 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter {}
-.fade-enter-active {}
-.fade-enter-to {}
-.fade-leave {}
-.fade-leave-active {}
-.fade-leave-to {}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 1s;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-leave-to {
+  opacity: 0;
+}
 
 .main {
   width: 70%;
