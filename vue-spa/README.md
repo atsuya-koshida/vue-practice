@@ -1,4 +1,4 @@
-# vue-router
+# vue-spa
 
 ## Project setup
 ```
