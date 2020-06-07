@@ -2,7 +2,7 @@
   <div style="width: 700px; margin: auto; padding-top: 50px;">
     <nav>
       <router-link to="/" active-class="link--active" exact="" class="link">Home</router-link>
-      <router-link to="/users" active-class="link--active" exact="" class="link">Users</router-link>
+      <router-link to="/users" active-class="link--active" class="link">Users</router-link>
     </nav>
     <router-view></router-view>
   </div>
